@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/abeja"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:backgroundTint="#03a9f4"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/abeja" />
+
+        <ImageButton
+            android:id="@+id/ajolote"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:backgroundTint="#0ff5fe"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/ajolote" />
+
+        <ImageButton
+            android:id="@+id/bunny"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:backgroundTint="#0bb"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/bunny" />
+
+        <ImageButton
+            android:id="@+id/camaleon"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:backgroundTint="#089"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/camaleon" />
+
+        <ImageButton
+            android:id="@+id/koala"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:backgroundTint="#034"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/coala" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

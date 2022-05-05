@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearCuenta">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <EditText
+                android:id="@+id/Correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo"/>
+
+            <EditText
+                android:id="@+id/Usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Usuario"/>
+
+            <EditText
+                android:id="@+id/Nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+
+            <EditText
+                android:id="@+id/Contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/ConfirmarContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar Contraseña"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/Telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefono"
+                android:inputType="phone"/>
+
+            <EditText
+                android:id="@+id/FechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha nacimiento"
+                android:inputType="date" />
+
+            <Button
+                android:id="@+id/Unete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-black"
+                android:onClick="unetee"
+                android:text="UNETE"
+                android:textColor="@color/colorPrimary"
+                android:theme="@style/TransparenciaBoton"
+                app:cornerRadius="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
